@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- > nome = 'Gustavo'
+'Gustavo'
+> idade = 41
+41
+> nota = 5.5
+5.5
+> 'O aluno ' +  nome + 'com ' + idade + ' tirou a nota ' + not
+Uncaught ReferenceError: not is not defined
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(2).replace (',','.')
+'1545.50'
+> n1.toFixed(2).replace ('.',',')
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+'€ 1.545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+'US$ 1.545,50'
+-->   
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+    </style>
+    
+    <script>
+        var nome = window.prompt ('Qual é o seu nome?')
+        document.write (`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write (`Seu nome em maiusculas é ${nome.toUpperCase()}.<br/>`)
+        document.write (`Seu nome em minusculas é ${nome.toLowerCase()}.`)
+    </script>
+</body>
+</html>
